@@ -1,0 +1,118 @@
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> University Web Design </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">       
+
+        
+    </head>
+
+    <body>
+       
+        <section class="sub-header">
+            <nav>
+                
+                <a href="index.html"><img src="images/logo.png"></a>
+               
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()" ></i>
+
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificate & Online Programs For 2023</h1>
+
+        </section>
+
+
+  <!---------------blog page content---------------->      
+
+  <section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2>Our Certificate & Online Programs For 2023</h2>
+            <p>university certificates are a valuable educational investment that can lead to personal and professional growth. They offer focused learning experiences, skill development, and recognition of your achievements, all of which can help you advance in your career and achieve your goals.</p> <br>
+            <p> University certificates are designed to provide in-depth knowledge and practical skills in a specific field or subject area. They often focus on a particular aspect of a broader discipline, allowing you to gain expertise in a niche area. This specialized training can be particularly valuable for certain careers that require specific competencies.</p> <br>
+            <p>Compared to traditional degree programs, university certificate programs are typically shorter in duration. They can range from a few months to a year or more, depending on the program's complexity. This means you can acquire valuable skills and credentials in a relatively short period, making it an attractive option for those looking to enter the job market quickly or upskill.</p> <br>
+            <p> University certificates are often developed in collaboration with industry experts to ensure that the curriculum aligns with current industry needs and trends. This practical focus means that the knowledge and skills you gain are immediately applicable to real-world situations.</p> <br>
+            <p>In conclusion, university certificates are a valuable educational option that offers specialized knowledge, practical skills, and career benefits. They are designed to meet the needs of individuals looking for targeted education that can lead to career advancement and personal growth.</p>
+        
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form  class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea  rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer science</span>
+                <span>34</span>
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+<!-----------------Footer------------------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p> we're a reflection of our identity, values, and purpose. It's a space where we define our mission, vision, and the essence of what makes us unique. <br> Through these words, we invite you to explore the heart of our online presence, understand our commitment, and join us on our journey.</p>
+    <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made With  <i class="fas fa-heart"></i>  by Tharushi</p>
+
+</section>
+
+
+<!--------------javascript for toggle menu--------------->
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="200";
+            }
+        </script>
+
+    </body>
+</html>
